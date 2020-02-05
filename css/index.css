@@ -131,6 +131,20 @@ table {
   width: 20%;
   height: 20%;
 }
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
 * {
   box-sizing: border-box;
 }
@@ -139,6 +153,7 @@ body {
   height: 100%;
 }
 body {
+  margin: 0;
   justify-content: center;
   padding: 3em;
   font-family: 'Dosis', sans-serif;
@@ -175,7 +190,7 @@ body {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000000;
+  color: #68569d;
   text-decoration: none;
 }
 #intro {
@@ -190,4 +205,24 @@ img {
 }
 h1 {
   font-size: 2rem;
+  line-height: 2.5rem;
+}
+h2 {
+  border-bottom: 3px solid black;
+  line-height: 3rem;
+}
+.email_button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  background-color: #68569d;
 }

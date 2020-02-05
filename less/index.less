@@ -50,10 +50,24 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
+@link_buttons: #68569d;
 @font-family: 'Dosis', sans-serif;
 .photo{
 	width: 20%;
 	height: 20%;
+}
+.button{
+	border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
 }
 
 
@@ -66,6 +80,7 @@ html, body {
 }
 
 body{
+	margin: 0;
 	justify-content: center;
 	padding: 3em;
 	font-family: @font-family;
@@ -73,7 +88,7 @@ body{
 }
 .container{
 		padding-top: 3em;
-}
+		}
 .header{
 	position:fixed;
 	z-index: 10000;
@@ -104,7 +119,7 @@ body{
 						margin: 0;
 						font-size: 1.5rem;
 						font-weight: bold;
-						color: #000000;
+						color: @link_buttons;
 						text-decoration: none;
 					}//a
 
@@ -125,4 +140,15 @@ body{
 
 	h1{
 		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+	h2{
+		border-bottom: 3px solid black;
+		line-height: 3rem;
+	}
+
+	.email_button{
+		.button();
+		background-color: @link_buttons
 	}
