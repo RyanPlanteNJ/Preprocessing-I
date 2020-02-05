@@ -158,7 +158,7 @@ p{
 	}
 
  .linebreak{
-	 font-size: 1.25rem;
+	 	font-size: 1.25rem;
 		border-bottom: 3px solid black;
 		line-height: 2rem;
 	}
@@ -180,7 +180,7 @@ p{
 				text-decoration: none;
 			}
 
-#about_me{
+#about{
 	margin: 2rem;
 	display: flex;
 	flex-flow: row;
@@ -200,23 +200,25 @@ p{
 			font-size: 1.5rem;
 		}
 	}
-		ul{
+		.interests ul{
+			border: 2px solid black;
 			font-size: 1.5rem;
 			line-height: 2.5rem;
-		}
+}
+
+
 		.info_about_me{
 			text-align:justify;
 		}
 
-		.box.interests li{
+		.interests li{
+			border-bottom:2px solid black;
 			text-align: center;
 			display: flex;
 			flex-flow: column;
 			justify-content: center;
-
 		}
-
-#work_history{
+	#work_history{
 			margin: 2rem;
 	}
 		#work_history ul{
@@ -260,3 +262,22 @@ p{
 					color: @link_buttons;
 				}
 }//footer
+
+
+	@media(max-width: 850px){
+		#intro{
+			img{
+				display: none;
+			}
+			font-size: .25rem;
+		}
+		#about{
+			flex-flow:column;
+			width: 100vw;
+			.box{
+				margin:10px;
+				justify-content: center;
+				align-content: center;
+			}
+		}//about
+	}//media 850px

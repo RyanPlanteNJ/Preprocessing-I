@@ -250,7 +250,7 @@ a {
   color: white;
   text-decoration: none;
 }
-#about_me {
+#about {
   margin: 2rem;
   display: flex;
   flex-flow: row;
@@ -266,14 +266,16 @@ a {
 .box p {
   font-size: 1.5rem;
 }
-ul {
+.interests ul {
+  border: 2px solid black;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
 .info_about_me {
   text-align: justify;
 }
-.box.interests li {
+.interests li {
+  border-bottom: 2px solid black;
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -318,4 +320,21 @@ ul {
 }
 .footer :hover {
   color: #68569d;
+}
+@media (max-width: 850px) {
+  #intro {
+    font-size: 0.25rem;
+  }
+  #intro img {
+    display: none;
+  }
+  #about {
+    flex-flow: column;
+    width: 100vw;
+  }
+  #about .box {
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
 }
