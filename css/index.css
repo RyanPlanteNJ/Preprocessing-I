@@ -226,6 +226,7 @@ img {
 }
 .email {
   font-size: 1.5rem;
+  margin: 1rem 0 1rem;
 }
 .email_button {
   border: none;
@@ -281,9 +282,22 @@ ul {
 #work_history {
   margin: 2rem;
 }
+#work_history ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  line-height: 4rem;
+  padding: 0 1rem 0 1rem;
+}
+.job_1 ul {
+  background: #b0b0b0;
+}
+.job_3 ul {
+  background: #b0b0b0;
+}
 .footer {
   right: 0.5em;
-  top: 0;
+  bottom: 0;
   height: 3em;
   line-height: 3em;
 }
