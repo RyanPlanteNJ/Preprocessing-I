@@ -152,26 +152,39 @@ body {
   height: 100%;
 }
 body {
-  margin: 0;
+  max-width: 80%;
+  margin: 0 auto;
   justify-content: center;
   padding: 3em;
   font-family: 'Dosis', sans-serif;
   font-size: 13pt;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 .container {
   padding-top: 3em;
 }
 .header {
   background-color: white;
+  width: 100vw;
   position: fixed;
   z-index: 10000;
   left: 0;
   top: 0;
-  width: 100vw;
   height: 3em;
   line-height: 3em;
 }
 .header nav {
+  margin-right: 10px;
   position: absolute;
   right: 0.5em;
   top: 0;
@@ -206,13 +219,13 @@ img {
   width: 20%;
   height: 20%;
 }
-h1 {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
 .linebreak {
+  font-size: 1.25rem;
   border-bottom: 3px solid black;
   line-height: 2rem;
+}
+.email {
+  font-size: 1.5rem;
 }
 .email_button {
   border: none;
@@ -235,4 +248,60 @@ h1 {
 a {
   color: white;
   text-decoration: none;
+}
+#about_me {
+  margin: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.box {
+  width: 45%;
+}
+.box h2 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.box p {
+  font-size: 1.5rem;
+}
+ul {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.info_about_me {
+  text-align: justify;
+}
+.box.interests li {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+#work_history {
+  margin: 2rem;
+}
+.footer {
+  right: 0.5em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+}
+.footer ul {
+  margin: 0;
+}
+.footer li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+.footer a {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.footer :hover {
+  color: #68569d;
 }
