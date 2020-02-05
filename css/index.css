@@ -127,6 +127,10 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.photo {
+  width: 20%;
+  height: 20%;
+}
 * {
   box-sizing: border-box;
 }
@@ -135,27 +139,55 @@ body {
   height: 100%;
 }
 body {
-  background-color: #fff;
+  justify-content: center;
+  padding: 3em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 13pt;
 }
-body .container {
-  max-width: 800px;
+.container {
+  padding-top: 3em;
 }
-body .header {
+.header {
   position: fixed;
   z-index: 10000;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 3em;
   line-height: 3em;
 }
-body nav {
+.header nav {
   position: absolute;
   right: 0.5em;
   top: 0;
   height: 3em;
   line-height: 3em;
 }
-body ul {
+.header ul {
   margin: 0;
+}
+.header li {
+  display: inline-block;
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+.header a {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+#intro {
+  padding: 2rem;
+  opacity: 80%;
+  background-color: #888888;
+  width: 100%;
+}
+img {
+  width: 20%;
+  height: 20%;
+}
+h1 {
+  font-size: 2rem;
 }
