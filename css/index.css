@@ -136,11 +136,10 @@ table {
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
@@ -163,6 +162,7 @@ body {
   padding-top: 3em;
 }
 .header {
+  background-color: white;
   position: fixed;
   z-index: 10000;
   left: 0;
@@ -190,13 +190,16 @@ body {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #68569d;
+  color: black;
   text-decoration: none;
+}
+.header :hover {
+  color: #68569d;
 }
 #intro {
   padding: 2rem;
   opacity: 80%;
-  background-color: #888888;
+  background-color: #c8c8c8;
   width: 100%;
 }
 img {
@@ -207,22 +210,29 @@ h1 {
   font-size: 2rem;
   line-height: 2.5rem;
 }
-h2 {
+.linebreak {
   border-bottom: 3px solid black;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 .email_button {
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
+  cursor: pointer;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
   background-color: #68569d;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+:hover {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.24), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+}
+a {
+  color: white;
+  text-decoration: none;
 }
