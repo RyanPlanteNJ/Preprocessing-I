@@ -55,6 +55,15 @@ table {
 .photo{
 	width: 20%;
 	height: 20%;
+
+.displayflex(@justify, @aligni, @alignc, @flex){
+	display: flex;
+	justify-content: @justify;
+	align-items: @aligni;
+	align-content: @alginc;
+	flex-flow: @flex;
+}
+
 }
 .button{
  border: none;
@@ -159,7 +168,7 @@ p{
 	img{
 		.photo();
 		@media(max-width: 850px){
-			display: none;
+			display: none;//image disapprears at 850px;
 	}
 }
  .linebreak{
@@ -187,11 +196,12 @@ p{
 
 #about{
 	margin: 2rem;
+	// .displayflex(space-between, center, center,row);
 	display: flex;
-	flex-flow: row;
 	justify-content: space-between;
+	align-items: center;
 		@media (max-width: 850px){
-			flex-flow:column;
+			flex-flow: column;
 			width: 100vw;
 		}
 	// align-content:center;
@@ -201,7 +211,7 @@ p{
 		@media (max-width: 850px){
 		margin:10px;
 		justify-content: center;
-		align-content: center;
+		align-content: center;//contents move to center of
 }
 		h2{
 			text-align: left;

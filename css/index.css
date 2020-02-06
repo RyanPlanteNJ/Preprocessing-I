@@ -263,8 +263,8 @@ a {
 #about {
   margin: 2rem;
   display: flex;
-  flex-flow: row;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 850px) {
   #about {
