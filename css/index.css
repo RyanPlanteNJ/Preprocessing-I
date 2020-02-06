@@ -231,13 +231,16 @@ body {
 .container #main_content ul li {
   font-size: 1rem;
 }
+.container #main_content .info_about_me {
+  padding-bottom: 2rem;
+}
 .container #main_content .info_about_me p {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
 .container aside {
   background-color: rgba(170, 170, 170, 0.15);
-  width: 500px;
+  width: 600px;
   padding: 20px;
   margin-top: 10px;
 }
