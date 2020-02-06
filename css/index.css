@@ -213,6 +213,12 @@ body {
   height: auto;
   margin-bottom: 200px;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container #main_content {
   margin-left: 15px;
   padding-bottom: 30px;
@@ -243,6 +249,21 @@ body {
   width: 600px;
   padding: 20px;
   margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .container aside {
+    display: flex;
+    flex-direction: row;
+  }
+  .container aside div {
+    margin: 3px;
+  }
+  .container aside h3 {
+    font-size: 1.5rem;
+  }
+  .container aside p {
+    font-size: 0.5rem;
+  }
 }
 .container aside div {
   margin-bottom: 20px;
