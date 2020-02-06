@@ -215,7 +215,7 @@ p {
   background-color: #c8c8c8;
   width: 100%;
 }
-@media (max-width: 850px) {
+@media (max-width: 500px) {
   #intro {
     font-size: 0.25rem;
   }
@@ -224,7 +224,7 @@ img {
   width: 20%;
   height: 20%;
 }
-@media (max-width: 850px) {
+@media (max-width: 500px) {
   img {
     display: none;
   }
@@ -264,9 +264,8 @@ a {
   margin: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-@media (max-width: 850px) {
+@media (max-width: 500px) {
   #about {
     flex-flow: column;
     width: 100vw;
@@ -275,7 +274,7 @@ a {
 .box {
   width: 45%;
 }
-@media (max-width: 850px) {
+@media (max-width: 500px) {
   .box {
     margin: 10px;
     justify-content: center;
@@ -286,13 +285,28 @@ a {
   text-align: left;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  .box h2 {
+    font-size: 1.5rem;
+  }
+}
 .box p {
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .box p {
+    font-size: 0.9rem;
+  }
 }
 .interests ul {
   border: 2px solid black;
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+@media (max-width: 500px) {
+  .interests ul {
+    font-size: 0.9rem;
+  }
 }
 .info_about_me {
   text-align: justify;
@@ -306,6 +320,11 @@ a {
 }
 #work_history {
   margin: 2rem;
+}
+@media (max-width: 500px) {
+  #work_history {
+    font-size: 0.75rem;
+  }
 }
 #work_history ul {
   display: flex;

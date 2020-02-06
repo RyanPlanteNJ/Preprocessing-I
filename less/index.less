@@ -55,14 +55,15 @@ table {
 .photo{
 	width: 20%;
 	height: 20%;
-
-.displayflex(@justify, @aligni, @alignc, @flex){
-	display: flex;
-	justify-content: @justify;
-	align-items: @aligni;
-	align-content: @alginc;
-	flex-flow: @flex;
-}
+// does not work need to find out work_history
+//
+// .displayflex(@justify, @aligni, @alignc, @flex){
+// 	display: flex;
+// 	justify-content: @justify;
+// 	align-items: @aligni;
+// 	align-content: @alginc;
+// 	flex-flow: @flex;
+// }
 
 }
 .button{
@@ -112,11 +113,11 @@ p{
 
 .container{
 		padding-top: 3em;
-		}
+		}//moving whole container down to make room for nav bar
 .header{
 	background-color: white;
 	width: 100vw;
-	position:fixed;
+	position:fixed; //keeps nav bar fixed to top of page
 	z-index: 10000;
 	left: 0;
 	top: 0;
@@ -130,7 +131,7 @@ p{
 			top:0;
 			height:3em;
 			line-height: 3em;
-		} //nav
+		} //nav  //moves nav bar to top right
 
 			ul {
 				margin: 0;
@@ -161,13 +162,13 @@ p{
 		width: 100%;
 		// flex-flow: row;
 		// width: 48%;
-			@media(max-width: 850px){
+			@media(max-width: 500px){
 				font-size: .25rem;
 			}
 }//intro
 	img{
 		.photo();
-		@media(max-width: 850px){
+		@media(max-width: 500px){
 			display: none;//image disapprears at 850px;
 	}
 }
@@ -184,10 +185,10 @@ p{
 	.email_button{
 		.button();
 		background-color: @link_buttons;
-		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); //shadow underneat button
 	}
 		:hover{
-			box-shadow:0 0px 0px 0 rgba(0,0,0,0.24),0 0px 0px 0 rgba(0,0,0,0.19);
+			box-shadow:0 0px 0px 0 rgba(0,0,0,0.24),0 0px 0px 0 rgba(0,0,0,0.19); //makes  button likes its being pressed when hovered
 		}
 			a{
 				color: white;
@@ -199,8 +200,8 @@ p{
 	// .displayflex(space-between, center, center,row);
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-		@media (max-width: 850px){
+	// align-items: center;
+		@media (max-width: 500px){
 			flex-flow: column;
 			width: 100vw;
 		}
@@ -208,25 +209,34 @@ p{
 }
 	.box{
 		width: 45%;
-		@media (max-width: 850px){
-		margin:10px;
-		justify-content: center;
-		align-content: center;//contents move to center of
+		@media (max-width: 500px){
+			margin:10px;
+			justify-content: center;
+			align-content: center;//contents move to center of
 }
 		h2{
 			text-align: left;
 			margin-bottom: 15px;
+				@media (max-width: 500px){
+					font-size: 1.5rem;
+				}
 		}
 
 
 		p{
 			font-size: 1.5rem;
+				@media (max-width: 500px){
+					font-size: .9rem;
+				}
 		}
 	}
 		.interests ul{
 			border: 2px solid black;
 			font-size: 1.5rem;
 			line-height: 2.5rem;
+				@media (max-width: 500px){
+					font-size: .9rem;
+				}
 }
 
 
@@ -242,7 +252,10 @@ p{
 			justify-content: center;
 		}
 	#work_history{
-			margin: 2rem;
+		margin: 2rem;
+			@media (max-width: 500px){
+				font-size: .75rem;
+			}
 	}
 		#work_history ul{
 			display:flex;
