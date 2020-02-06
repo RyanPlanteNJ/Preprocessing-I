@@ -215,9 +215,19 @@ p {
   background-color: #c8c8c8;
   width: 100%;
 }
+@media (max-width: 850px) {
+  #intro {
+    font-size: 0.25rem;
+  }
+}
 img {
   width: 20%;
   height: 20%;
+}
+@media (max-width: 850px) {
+  img {
+    display: none;
+  }
 }
 .linebreak {
   font-size: 1.25rem;
@@ -256,8 +266,21 @@ a {
   flex-flow: row;
   justify-content: space-between;
 }
+@media (max-width: 850px) {
+  #about {
+    flex-flow: column;
+    width: 100vw;
+  }
+}
 .box {
   width: 45%;
+}
+@media (max-width: 850px) {
+  .box {
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
 }
 .box h2 {
   text-align: left;
@@ -320,21 +343,4 @@ a {
 }
 .footer :hover {
   color: #68569d;
-}
-@media (max-width: 850px) {
-  #intro {
-    font-size: 0.25rem;
-  }
-  #intro img {
-    display: none;
-  }
-  #about {
-    flex-flow: column;
-    width: 100vw;
-  }
-  #about .box {
-    margin: 10px;
-    justify-content: center;
-    align-content: center;
-  }
 }
