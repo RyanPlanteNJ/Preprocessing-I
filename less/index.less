@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,159 @@ html, body {
     height: 100%;
 }
 
+.displayflex(@flexdirection){
+	display: flex;
+	flex-direction: @flexdirection;
+}
+@font-family: 'Dosis', sans-serif;
+
+
+body{
+	font-family: @font-family;
+	font-size: 14px;
+	padding: 70px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.header{
+	background-color: white;
+	width: 100vw;
+	position:fixed; //keeps nav bar fixed to top of page
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	height: 3em;
+	line-height: 3em;
+		nav {
+
+			margin-right: 10px;
+			position: absolute;
+			right: 0.5em;
+			top:0;
+			height:3em;
+			line-height: 3em;
+		} //nav  //moves nav bar to top right
+
+			ul {
+				margin: 0;
+			}//ul
+
+				li{
+					display: inline-block;
+					margin-left: 0.5em;
+					font-size: 0.9em;
+				}//li
+					a{
+						margin: 0;
+						font-size: 1.5rem;
+						font-weight: bold;
+						color: black;
+						text-decoration: none;
+					}//a
+
+}//header
+
+#intro{
+	display: flex;
+
+	.image{
+		display: flex;
+		justify-content: center;
+		align-self: center;
+	}
+	.image img{
+		max-width: 60%;
+		max-height: 60%;
+			@media(max-width:500px){
+				display:none;
+		}
+	}
+	.header_name{
+		background-color: rgba(#aaaaaa, 0.15);
+		width: 100%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		text-align: center;
+			h1{
+				letter-spacing: 3.5px;
+				font-size: 3.5rem;
+		}
+			h2{
+				font-size: 2rem;
+				letter-spacing: 3.5px;
+			}
+	}
+}
+.container{
+	.displayflex(row-reverse);
+	height: auto;
+	margin-bottom: 200px;
+		@media (max-width:500px){
+			.displayflex(column);
+		}
+		#main_content{
+			margin-left: 15px;
+			padding-bottom: 30px;
+			line-height: 3rem;
+			h3{
+					font-size: 2rem;
+				}
+				h4{
+					font-size: 1.5rem;
+				}
+			p{
+				font-size: 1rem;
+				line-height: 1rem;
+			}
+
+			ul li{
+				font-size: 1rem;
+			}
+			.info_about_me{
+				padding-bottom: 2rem;
+			}
+			.info_about_me p{
+				font-size: 1.25rem;
+				line-height:1.5rem;
+			}
+		}
+		aside{
+			background-color: rgba(#aaaaaa, 0.15);
+			width:600px;
+			padding: 20px;
+			margin-top: 10px;
+				@media (max-width: 500px){
+					.displayflex(row);
+					width:500px;
+					div{
+						margin: 3px;
+					}
+					h3{
+							font-size: 1.5rem;
+						}
+					p{
+						font-size: .5rem;
+					}
+				}//media
+				div{
+					margin-bottom: 20px;
+				}//div
+					h3{
+							font-size:2rem;
+							padding-bottom: 2px;
+					}//h3
+					h4{
+						line-height: 1.2rem;
+					}
+					p{
+						font-size: 1rem;
+						line-height: 1.5rem;
+					}//p
+				li{
+					line-height: 1.5rem;
+				}//li
+
+	}//aside
+}
